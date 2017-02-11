@@ -35,7 +35,7 @@ If you'd like to request a new functionality, feel free to do so by opening an i
 - [Bootstrap](http://getbootstrap.com/) - Extensive list of components and  Bundled Javascript plugins.
 
 ## Todo
-- Adding Algorhythm webpage.
+- Adding AlgoRhythm webpage.
 - Adding images to Gallery
 
 ## Team
