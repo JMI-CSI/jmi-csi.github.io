@@ -1,3 +1,8 @@
+
+$('#container').imagesLoaded( function() {
+  	$(".se-pre-con").fadeOut("slow");
+});
+
 var $contactForm = $('#contact-form');
 
 $contactForm.submit(function(e) {
