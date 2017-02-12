@@ -13,10 +13,9 @@ $contactForm.submit(function(e) {
 		beforeSend: function() {
             $submit.removeClass('btn-success').addClass('btn-warning');
 			$submit.attr('disabled', true).val('Sending message…');
-            $submit.removeClass('btn-warning').addClass('btn-success');
 		},
 		success: function(data) {
-                $submit.removeClass('btn-success').addClass('btn-info');
+                $submit.removeClass('btn-warning').addClass('btn-info');
 				$submit.val('Message sent!');
 			setTimeout(function() {
 				$submit.attr('disabled', false).val(defaultSubmitText);
@@ -24,7 +23,7 @@ $contactForm.submit(function(e) {
 			}, 3000);
 		},
 		error: function(err) {
-            $submit.removeClass('btn-success').addClass('btn-danger');
+            $submit.removeClass('btn-warning').addClass('btn-danger');
 			$submit.val('Opps, there was an error!');
 			setTimeout(function() {
 				$submit.attr('disabled', false).val(defaultSubmitText);
