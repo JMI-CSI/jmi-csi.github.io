@@ -5,6 +5,9 @@
 a{
     color: #337ab7;
 }
+.navbar-right > li{
+	text-shadow: 0px 0px 5px #000;
+}
 
 /*loader animation*/
 no-js #loader { display: none;  }
