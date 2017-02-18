@@ -36,7 +36,7 @@ If you'd like to request a new functionality, feel free to do so by opening an i
 
 ## Todo
 - Adding AlgoRhythm webpage.
-- Adding images to Gallery
+- Adding About Us page.
 
 ## Team
 
