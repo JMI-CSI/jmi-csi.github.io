@@ -1,7 +1,12 @@
 .my-navbar{
     background-color: #027656
 }
-
+.mycarousel-size{
+	width: 80%;
+}
+.mycarousel-size h3{
+	line-height: 0.5em;
+}
 a{
     color: #337ab7;
 }
