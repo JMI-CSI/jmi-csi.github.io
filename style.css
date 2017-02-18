@@ -1,0 +1,28 @@
+.my-navbar{
+    background-color: #027656
+}
+.mycarousel-size{
+	width: 80%;
+}
+.mycarousel-size h3{
+	line-height: 0.5em;
+}
+a{
+    color: #337ab7;
+}
+.navbar-right > li{
+	text-shadow: 0px 0px 5px #000;
+}
+
+/*loader animation*/
+no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/loading/Preloader_3.gif) center no-repeat #fff;
+}
