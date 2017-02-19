@@ -32,6 +32,17 @@
   </head>
 
   <body id="container" class="index-page">
+    <script type="text/javascript">
+              var ii = 1;
+              setInterval(function(){
+                var image = "assets/img/auto/0" + ii + ".jpg";
+                console.log(image);
+                document.getElementById('hat').style.backgroundImage="url('" + image + "')";
+                ii++;
+                if (ii == 7) ii = 1;
+              }, 5000);
+         </script>
+         
       <div class="se-pre-con"></div>
     <!-- Navbar -->
     <nav class="navbar navbar-transparent navbar-fixed-top my-navbar navbar-color-on-scroll">
@@ -82,8 +93,7 @@
       </div>
     </nav>
     <div class="wrapper">
-      <div class="header " style="background-image: url('assets/img/matrix.png');"
-      class="stars">
+      <div class="header " id='hat'>
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2">
