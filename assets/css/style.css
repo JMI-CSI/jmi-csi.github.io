@@ -10,7 +10,7 @@
 a{
     color: #337ab7;
 }
-.navbar-right > li{
+.navbar-right > li,.brand{
 	text-shadow: 0px 0px 5px #000;
 }
 
