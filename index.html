@@ -33,18 +33,21 @@
 
   <body id="container" class="index-page">
     <script type="text/javascript">
-           document.addEventListener("DOMContentLoaded", function(event) {
-            var ii = 1;
+        document.addEventListener("DOMContentLoaded", function(event) {
+            ii = 1;
               setInterval(function(){
                 var image = "assets/img/auto/0" + ii + ".jpg";
-//                 console.log(image);
-                document.getElementById('hat').style.backgroundImage="url('" + image + "')";
+                  $("#hat").stop().animate({opacity: 0.25}, 1000, function(){
+                    $(this).css({
+                        'background-image': 'url(' + image + ')'
+                    }).animate({opacity: 1},{ duration:1000 });
+                 });
                 ii++;
                 ii = ((ii - 1) % 6) + 1;
               }, 5000);
         });
-         </script>
-         
+    </script>
+
       <div class="se-pre-con"></div>
     <!-- Navbar -->
     <nav class="navbar navbar-transparent navbar-fixed-top my-navbar navbar-color-on-scroll">
@@ -68,18 +71,18 @@
         </div>
         <div class="collapse navbar-collapse" id="navigation-index">
           <ul class="nav navbar-nav navbar-right">
-            <li>	
+            <li>
               <a rel="tooltip" title="Techno-Cultural Fest" data-placement="bottom" href="http://algorhythm.csi-jmi.com">
 						    <i class="material-icons"><strong>A</strong></i><txt style="vertical-align:sub;">lgoRhythm</txt>
               </a>
             </li>
 
-            <!-- <li>  
+            <!-- <li>
               <a rel="tooltip" title="About Our Organisation" data-placement="bottom" href="about.html" target="_blank">
                 <i class="material-icons"><strong>A</strong></i><txt style="vertical-align:sub;">bout Us</txt>
               </a>
             </li> -->
-            
+
             <!-- <li>
 					<a rel="tooltip" title="Cultural Society" data-placement="bottom" href="" target="_blank">
 						<i class="material-icons">F</i>iction
