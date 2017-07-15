@@ -37,14 +37,14 @@
             ii = 1;
               setInterval(function(){
                 var image = "assets/img/auto/0" + ii + ".jpg";
-                  $("#hat").stop().animate({opacity: 0.25}, 1000, function(){
+                  $("#hat").stop().animate({opacity: 0.25}, 2500, function(){
                     $(this).css({
                         'background-image': 'url(' + image + ')'
-                    }).animate({opacity: 1},{ duration:1000 });
+                    }).animate({opacity: 1},{ duration:2500 });
                  });
                 ii++;
                 ii = ((ii - 1) % 6) + 1;
-              }, 5000);
+            }, 6000);
         });
     </script>
 
