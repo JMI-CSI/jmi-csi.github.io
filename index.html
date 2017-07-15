@@ -33,14 +33,16 @@
 
   <body id="container" class="index-page">
     <script type="text/javascript">
-              var ii = 1;
+           document.addEventListener("DOMContentLoaded", function(event) {
+            var ii = 1;
               setInterval(function(){
                 var image = "assets/img/auto/0" + ii + ".jpg";
-                console.log(image);
+//                 console.log(image);
                 document.getElementById('hat').style.backgroundImage="url('" + image + "')";
                 ii++;
-                if (ii == 7) ii = 1;
+                ii = ((ii - 1) % 6) + 1;
               }, 5000);
+        });
          </script>
          
       <div class="se-pre-con"></div>
