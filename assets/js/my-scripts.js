@@ -29,7 +29,7 @@ $contactForm.submit(function(e) {
 		},
 		error: function(err) {
             $submit.removeClass('btn-warning').addClass('btn-danger');
-			$submit.val('Opps, there was an error!');
+			$submit.val('Oops, there was an error!');
 			setTimeout(function() {
 				$submit.attr('disabled', false).val(defaultSubmitText);
                 $submit.removeClass('btn-danger').addClass('btn-success');
